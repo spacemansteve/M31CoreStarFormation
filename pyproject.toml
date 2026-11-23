@@ -1,0 +1,9 @@
+[project]
+name = "kelly-m31-reproduction"
+version = "0.0.1"
+description = "Literature and resource audit for M31 nuclear stellar disk replication"
+requires-python = ">=3.10"
+dependencies = []
+
+# Stage 0 scripts use only the standard library. This is not yet an installable
+# science package; select and lock astronomy dependencies with the prototype.

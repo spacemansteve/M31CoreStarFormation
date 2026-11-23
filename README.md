@@ -1,0 +1,44 @@
+# M31 nuclear disk: reproduction and AI research audit
+
+**Stage 0 checkpoint: 2026-11-23. No scientific fit has been reproduced yet.**
+
+We are assessing how independently an AI agent can reproduce the observations and dynamical modeling of Lockhart et al. (2018), *A Slowly Precessing Disk in the Nucleus of M31 as the Feeding Mechanism for a Central Starburst*, [ApJ 854, 121](https://doi.org/10.3847/1538-4357/aaaa71). The scientific target is the old eccentric stellar disk's orientation and precession, using authentic observations and the Peiris & Tremaine (2003; PT03) model.
+
+The literature and resource audit found public analysis code and relevant archive records. It did **not** locate the final OSIRIS science cube/maps, associated bin/error products, or the original PT03 particle file. These are the shortest route to a faithful replication. Raw-frame completeness and historical calibration compatibility remain unresolved.
+
+## Start here
+
+- [Decision memo](docs/decision_memo.md): what is feasible now and what Kelly could supply.
+- [Paper map](docs/paper_map.md): figures, tables, methods, inputs, and comparison targets.
+- [Data inventory](docs/data_inventory.csv): access evidence, rights, sizes, and missing inputs.
+- [Replication plan](docs/replication_plan.md): next steps and scientific gates.
+- [Assumption ledger](docs/assumptions.md): paper/code differences that must not be silently resolved.
+- [Resource audit](docs/resource_audit.md): archive searches, public code findings, and limits of negative results.
+- [AI work log](docs/ai_work_log.md): actions, verification, human input, and blockers.
+
+## Quick start
+
+Stage 0 uses the Python standard library and installed Poppler tools. No astronomy packages or pipeline have been installed. On this machine Python runs on macOS arm64.
+
+```bash
+python3 scripts/verify_manifest.py
+python3 scripts/summarize_archives.py
+```
+
+`docs/acquisition_manifest.json` records retrieval sources and hashes for local evidence. To recover missing evidence, inspect the requests first, then run:
+
+```bash
+python3 scripts/fetch_sources.py --fetch-missing
+```
+
+This fetches only the listed papers, source snapshots, and metadata; it does not download FITS science frames or run the authors' code. Existing files are verified, not overwritten. Archive responses can change, so a changed checksum requires a new documented audit snapshot.
+
+## Layout and provenance
+
+`literature/` contains downloaded PDFs and derived text. `docs/evidence/` contains unmodified archive responses and public source snapshots, for inspection only. Both are excluded from Git; the tracked acquisition manifest allows retrieval and verification. `data/raw/`, `data/interim/`, `data/processed/`, `models/`, `src/`, `tests/`, and `figures/` are staged for later work. Original input products must remain unchanged; write derived outputs to a separate directory.
+
+The original [handoff](M31_Codex_Research_Handoff.md) is preserved. Corrections and uncertainties are recorded in the audit documents. Public visibility is not a software redistribution license; no third-party code is incorporated into our implementation.
+
+Every future scientific output must identify its class: **exact reproduction**, **approximate independent reconstruction**, **synthetic test**, or **unable to reproduce**. A transcription of a published result is reference data, not a recovered measurement. Algorithmic verification, numerical replication, and empirical model validity are separate achievements.
+
+The next recommended step is a small verified geometry/LOSVD prototype, with synthetic inputs labeled as such, while requesting the authentic intermediate products. A full raw reduction or large model grid awaits a separate feasibility decision.

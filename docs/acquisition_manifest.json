@@ -1,0 +1,316 @@
+{
+  "audit_date": "2026-11-23",
+  "timestamp_basis": "File completion mtime in UTC; audit dates use America/New_York",
+  "files": [
+    {
+      "path": "literature/lockhart2018.pdf",
+      "retrieved_at_utc": "2026-11-23T16:24:06.875098+00:00",
+      "size_bytes": 7298429,
+      "sha256": "9cec95771a05a919c749900126340b6758d11fde5c09cba40d9957e26b816650",
+      "request": {
+        "url": "https://discovery.ucl.ac.uk/id/eprint/10044861/1/Lockhart_Slowly_Precessing_Disk_VoR.pdf",
+        "method": "GET",
+        "params": {},
+        "note": "Published version, 23 pages"
+      }
+    },
+    {
+      "path": "literature/peiris_tremaine2003.pdf",
+      "retrieved_at_utc": "2026-11-23T16:24:07.566074+00:00",
+      "size_bytes": 785293,
+      "sha256": "0f18bcc5e7dad924712925d6873be74ed782ccc7e75bb5ce4f63110a096895db",
+      "request": {
+        "url": "https://arxiv.org/pdf/astro-ph/0307412",
+        "method": "GET",
+        "params": {},
+        "note": "Retrieved v1; only version listed in arXiv history"
+      }
+    },
+    {
+      "path": "literature/chang2007v2.pdf",
+      "retrieved_at_utc": "2026-11-23T16:24:07.712772+00:00",
+      "size_bytes": 375475,
+      "sha256": "c402599ecdd4644315802d56540736cdc66ea93d3a963b79d14aa44856d26c3d",
+      "request": {
+        "url": "https://arxiv.org/pdf/0704.3831v2",
+        "method": "GET",
+        "params": {},
+        "note": "arXiv v2; PDF typesetting date differs from submission date"
+      }
+    },
+    {
+      "path": "literature/bender2005.pdf",
+      "retrieved_at_utc": "2026-11-23T16:28:13.802817+00:00",
+      "size_bytes": 1572010,
+      "sha256": "86657e0d1cfe0bf16a3cd9915f2cd7aa48d1ef8dae702877559061de96e3add4",
+      "request": {
+        "url": "https://chandra.as.utexas.edu/m31stis.pdf",
+        "method": "GET",
+        "params": {},
+        "note": "Author-hosted published article; appendix inspected"
+      }
+    },
+    {
+      "path": "docs/evidence/jlu_tree.json",
+      "retrieved_at_utc": "2026-11-23T16:24:52.087844+00:00",
+      "size_bytes": 269194,
+      "sha256": "3a0fc6897228ec449d3c7a6e94123759720487f54ca3f3a45c0ac97c1ce49b74",
+      "request": {
+        "url": "https://api.github.com/repos/jluastro/JLU-python-code/git/trees/master?recursive=1",
+        "method": "GET",
+        "params": {},
+        "note": ""
+      }
+    },
+    {
+      "path": "docs/evidence/jlu_repo.json",
+      "retrieved_at_utc": "2026-11-23T16:25:08.008407+00:00",
+      "size_bytes": 5757,
+      "sha256": "e75db71a0f40e82e635aac45152dbc5a88a4b80c09377219916e2c829a6f84db",
+      "request": {
+        "url": "https://api.github.com/repos/jluastro/JLU-python-code",
+        "method": "GET",
+        "params": {},
+        "note": ""
+      }
+    },
+    {
+      "path": "docs/evidence/model_history.json",
+      "retrieved_at_utc": "2026-11-23T16:26:24.174885+00:00",
+      "size_bytes": 18974,
+      "sha256": "3d04bb2cbf45bdf324451cdff635349653692c07c93edec7d6ff2640e3889bf6",
+      "request": {
+        "url": "https://api.github.com/repos/jluastro/JLU-python-code/commits?path=jlu/m31/model_fit.py&per_page=10",
+        "method": "GET",
+        "params": {},
+        "note": ""
+      }
+    },
+    {
+      "path": "docs/evidence/model_fit.py",
+      "retrieved_at_utc": "2026-11-23T16:25:06.665083+00:00",
+      "size_bytes": 70560,
+      "sha256": "1755567f4e57d710c4a23f36e68111822e95b036573c5c914b6d1a8563c0f49a",
+      "request": {
+        "url": "https://raw.githubusercontent.com/jluastro/JLU-python-code/22b2cb0d7484ec36713af4e34983b5ccc284d8be/jlu/m31/model_fit.py",
+        "method": "GET",
+        "params": {},
+        "note": "Initially fetched from master; Git blob digest independently matches this pinned tree"
+      }
+    },
+    {
+      "path": "docs/evidence/ppxf_m31.py",
+      "retrieved_at_utc": "2026-11-23T16:25:07.236430+00:00",
+      "size_bytes": 216766,
+      "sha256": "5b4c748f303a48cda9397b6a1478149a1b3ff3b73a30bf8d63c5d779a970d4f6",
+      "request": {
+        "url": "https://raw.githubusercontent.com/jluastro/JLU-python-code/22b2cb0d7484ec36713af4e34983b5ccc284d8be/jlu/m31/ppxf_m31.py",
+        "method": "GET",
+        "params": {},
+        "note": "Initially fetched from master; Git blob digest independently matches this pinned tree"
+      }
+    },
+    {
+      "path": "docs/evidence/paper_2017.py",
+      "retrieved_at_utc": "2026-11-23T16:25:06.850578+00:00",
+      "size_bytes": 5362,
+      "sha256": "e852d138e04c957163f5f927aca912b8c7f41012cd28ec331f99fd89a853d935",
+      "request": {
+        "url": "https://raw.githubusercontent.com/jluastro/JLU-python-code/22b2cb0d7484ec36713af4e34983b5ccc284d8be/jlu/m31/paper_2017.py",
+        "method": "GET",
+        "params": {},
+        "note": "Initially fetched from master; Git blob digest independently matches this pinned tree"
+      }
+    },
+    {
+      "path": "docs/evidence/osiris_tags.json",
+      "retrieved_at_utc": "2026-11-23T16:25:50.795101+00:00",
+      "size_bytes": 4291,
+      "sha256": "86d7b48dab54844756d526a008f56152068fca4df61698aa58a69fbf6716ee95",
+      "request": {
+        "url": "https://api.github.com/repos/Keck-DataReductionPipelines/OsirisDRP/tags?per_page=100",
+        "method": "GET",
+        "params": {},
+        "note": ""
+      }
+    },
+    {
+      "path": "docs/evidence/osiris_repo.json",
+      "retrieved_at_utc": "2026-11-23T16:28:14.502581+00:00",
+      "size_bytes": 7912,
+      "sha256": "928f5b7f22c44156731478e65f11177dc5b15dfadca5371b8bdd93db71ef5f4b",
+      "request": {
+        "url": "https://api.github.com/repos/Keck-DataReductionPipelines/OsirisDRP",
+        "method": "GET",
+        "params": {},
+        "note": ""
+      }
+    },
+    {
+      "path": "docs/evidence/ppxf_package.json",
+      "retrieved_at_utc": "2026-11-23T16:28:14.051999+00:00",
+      "size_bytes": 159298,
+      "sha256": "115419aeb1fde584a88762aabdeb0286433779fb8fd541dc93c742b9df0c50f3",
+      "request": {
+        "url": "https://pypi.org/pypi/ppxf/json",
+        "method": "GET",
+        "params": {},
+        "note": ""
+      }
+    },
+    {
+      "path": "docs/evidence/vorbin_package.json",
+      "retrieved_at_utc": "2026-11-23T16:28:14.216464+00:00",
+      "size_bytes": 31171,
+      "sha256": "67dcdc6fd0cb9e8008b038ed677e374d86fa7b284f80a9d9417f7df7219082ea",
+      "request": {
+        "url": "https://pypi.org/pypi/vorbin/json",
+        "method": "GET",
+        "params": {},
+        "note": ""
+      }
+    },
+    {
+      "path": "docs/evidence/publisher.html",
+      "retrieved_at_utc": "2026-11-23T16:25:49.813164+00:00",
+      "size_bytes": 5515,
+      "sha256": "f2b6ac7cd3797cb8a26b4329e882dfe25c5b868e8bd1acafb54185c522216217",
+      "request": {
+        "url": "https://iopscience.iop.org/article/10.3847/1538-4357/aaaa71",
+        "method": "GET",
+        "params": {},
+        "note": "Browser challenge response, NOT article content or evidence of absent supplements"
+      }
+    },
+    {
+      "path": "docs/evidence/koa_osiris_nights.csv",
+      "retrieved_at_utc": "2026-11-23T16:24:45.256317+00:00",
+      "size_bytes": 470401,
+      "sha256": "bd8ea809790dd10c3b2cadb0648e8b775387a7942a0b94574ecf6bfceb022619",
+      "request": {
+        "url": "https://koa.ipac.caltech.edu/TAP/sync",
+        "method": "GET",
+        "params": {
+          "REQUEST": "doQuery",
+          "LANG": "ADQL",
+          "FORMAT": "csv",
+          "QUERY": "select * from koa_osiris where koaid like 'OS.20081021%' or koaid like 'OS.20100815%' or koaid like 'OS.20100828%' or koaid like 'OS.20100829%'"
+        },
+        "note": "Metadata only; compare broad and narrow responses before interpreting non-detections"
+      }
+    },
+    {
+      "path": "docs/evidence/koa_osiris_expanded.csv",
+      "retrieved_at_utc": "2026-11-23T16:25:49.691758+00:00",
+      "size_bytes": 705830,
+      "sha256": "49a0ce9ec3aa53a818724b3adfdf1ae19af7e12e40e29bf5836329e1d9d15565",
+      "request": {
+        "url": "https://koa.ipac.caltech.edu/TAP/sync",
+        "method": "GET",
+        "params": {
+          "REQUEST": "doQuery",
+          "LANG": "ADQL",
+          "FORMAT": "csv",
+          "QUERY": "select koaid,targname,cra,cdec,elaptime,sfilter,sscale,progpi,progid,koaimtyp,ofname,filesize_mb,filehand from koa_osiris where koaid like 'OS.201008%' or koaid like 'OS.2008102%'"
+        },
+        "note": "Metadata only; compare broad and narrow responses before interpreting non-detections"
+      }
+    },
+    {
+      "path": "docs/evidence/koa_osiris_verified.csv",
+      "retrieved_at_utc": "2026-11-23T16:27:02.761558+00:00",
+      "size_bytes": 18559,
+      "sha256": "e3762e56a0580274b9a4169da2e91cc6816cc922eda9ef150c5613182bb80350",
+      "request": {
+        "url": "https://koa.ipac.caltech.edu/TAP/sync",
+        "method": "GET",
+        "params": {
+          "REQUEST": "doQuery",
+          "LANG": "ADQL",
+          "FORMAT": "csv",
+          "QUERY": "select koaid,targname,cra,cdec,elaptime,sfilter,sscale,progpi,progid,koaimtyp,ofname,filesize_mb,filehand from koa_osiris where (koaid like 'OS.20081021%' or koaid like 'OS.20100815%' or koaid like 'OS.20100828%' or koaid like 'OS.20100829%')",
+          "MAXREC": "10000"
+        },
+        "note": "Metadata only; compare broad and narrow responses before interpreting non-detections"
+      }
+    },
+    {
+      "path": "docs/evidence/koa_osiris_20100829.csv",
+      "retrieved_at_utc": "2026-11-23T16:27:40.196315+00:00",
+      "size_bytes": 99,
+      "sha256": "ed31f17485ff0c5e13c264c55ce97b8702a1c094c42da1e830d47876df70b302",
+      "request": {
+        "url": "https://koa.ipac.caltech.edu/TAP/sync",
+        "method": "GET",
+        "params": {
+          "REQUEST": "doQuery",
+          "LANG": "ADQL",
+          "FORMAT": "csv",
+          "QUERY": "select koaid,targname,cra,cdec,elaptime,sfilter,sscale,progpi,progid,koaimtyp,ofname,filesize_mb,filehand from koa_osiris where koaid like 'OS.20100829%'",
+          "MAXREC": "10000"
+        },
+        "note": "Metadata only; compare broad and narrow responses before interpreting non-detections"
+      }
+    },
+    {
+      "path": "docs/evidence/koa_nirc2.csv",
+      "retrieved_at_utc": "2026-11-23T16:27:46.696364+00:00",
+      "size_bytes": 3958016,
+      "sha256": "9d694a639879974ad8e7b047d000189fd0dd29d08b4b7f2c634a67e192dd5361",
+      "request": {
+        "url": "https://koa.ipac.caltech.edu/TAP/sync",
+        "method": "GET",
+        "params": {
+          "REQUEST": "doQuery",
+          "LANG": "ADQL",
+          "FORMAT": "csv",
+          "QUERY": "select * from koa_nirc2 where (koaid like 'N2.20050729%' or koaid like 'N2.20071019%' or koaid like 'N2.20090910%')",
+          "MAXREC": "10000"
+        },
+        "note": "Metadata only; compare broad and narrow responses before interpreting non-detections"
+      }
+    },
+    {
+      "path": "docs/evidence/mast_10571.json",
+      "retrieved_at_utc": "2026-11-23T16:26:23.743403+00:00",
+      "size_bytes": 19560,
+      "sha256": "9e8564fd85f1ef332b704c8a3c6764816fad67579d50cfa603cfd4f9aa2671ff",
+      "request": {
+        "url": "https://mast.stsci.edu/api/v0/invoke",
+        "method": "POST",
+        "params": {
+          "request": "{\"service\": \"Mast.Caom.Filtered\", \"params\": {\"columns\": \"*\", \"filters\": [{\"paramName\": \"obs_collection\", \"values\": [\"HST\"]}, {\"paramName\": \"proposal_id\", \"values\": [\"10571\"]}]}, \"format\": \"json\", \"pagesize\": 1000, \"page\": 1}"
+        },
+        "note": ""
+      }
+    },
+    {
+      "path": "docs/evidence/mast_10571_products.json",
+      "retrieved_at_utc": "2026-11-23T16:27:17.187248+00:00",
+      "size_bytes": 338781,
+      "sha256": "7bd0951079b75bc3e55d4f711cfd502f1c7f64e8326051dcd3329eeaa8d1c070",
+      "request": {
+        "url": "https://mast.stsci.edu/api/v0/invoke",
+        "method": "POST",
+        "params": {
+          "request": "{\"service\": \"Mast.Caom.Products\", \"params\": {\"obsid\": \"24825602,24825603,24825604,24825606,24825608,26427997,26428004\"}, \"format\": \"json\", \"pagesize\": 10000, \"page\": 1}"
+        },
+        "note": ""
+      }
+    },
+    {
+      "path": "docs/evidence/mast_nucleus.json",
+      "retrieved_at_utc": "2026-11-23T16:27:21.832497+00:00",
+      "size_bytes": 852435,
+      "sha256": "1cf112950a47379d3123ed1eb866cb32bc1a9d630069140c01566fbcaa76fa57",
+      "request": {
+        "url": "https://mast.stsci.edu/api/v0/invoke",
+        "method": "POST",
+        "params": {
+          "request": "{\"service\": \"Mast.Caom.Filtered.Position\", \"params\": {\"columns\": \"*\", \"filters\": [{\"paramName\": \"obs_collection\", \"values\": [\"HST\"]}], \"position\": \"10.6845833,41.2691667,0.005\"}, \"format\": \"json\", \"pagesize\": 10000, \"page\": 1}"
+        },
+        "note": ""
+      }
+    }
+  ]
+}
