@@ -1,0 +1,76 @@
+{
+  "class": "approximate independent reconstruction / public-data demonstration",
+  "data_uri": "mast:HST/product/j9am01010_drz.fits",
+  "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/j9am01010_drz.fits",
+  "size_bytes": 16030080,
+  "sha256": "78549f5577afa5818917133141aa17d807ec279f6902cf5beab6b53fe24b74a4",
+  "program": 10571,
+  "target": "M31NUCLEUS",
+  "detector": "HRC",
+  "filter": "F435W",
+  "date_observed": "2006-06-15",
+  "product_date": "2026-05-20",
+  "exptime_s": 1192.0,
+  "input_ids": [
+    "j9am01dhq",
+    "j9am01diq",
+    "j9am01djq",
+    "j9am01dkq"
+  ],
+  "input_exposures_s": [
+    298.0,
+    298.0,
+    298.0,
+    298.0
+  ],
+  "cal_ver": [
+    "10.4.1 (08-Aug-2025)"
+  ],
+  "input_dqicorr": [
+    "COMPLETE"
+  ],
+  "input_sdqflags": [
+    31743
+  ],
+  "drizcorr": "COMPLETE",
+  "drizzle_kernel": "square",
+  "pixfrac": 1.0,
+  "units": "ELECTRONS/S",
+  "shape_yx": [
+    1137,
+    1164
+  ],
+  "wcs": [
+    "RA---TAN",
+    "DEC--TAN"
+  ],
+  "native_pixel_arcsec": [
+    0.02500000037252901,
+    0.025000000372529012
+  ],
+  "target_center_deg": [
+    10.68429166667,
+    41.26911388889
+  ],
+  "extensions": [
+    "PRIMARY",
+    "SCI",
+    "WHT",
+    "CTX",
+    "HDRTAB"
+  ],
+  "has_fits_checksums": [
+    false,
+    false,
+    false,
+    false,
+    false
+  ],
+  "valid_fraction_full": 0.8813344939205179,
+  "valid_fraction_cut": 1.0,
+  "max_round_trip_arcsec": 3.600257634864736e-10,
+  "display_limits_electrons_per_s": [
+    0.2055376236140728,
+    10.553448214531059
+  ]
+}

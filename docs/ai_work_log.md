@@ -36,3 +36,11 @@ Initial sandboxed network retrieval failed DNS resolution; authorized public dow
 Current classes: literature/source audit **complete within stated scope**; exact reproduction **not attempted / blocked on authentic inputs**; approximate reconstruction **planned**; synthetic test **planned**; gas-feeding hypothesis **not tested**.
 
 Next meaningful log entry should record either receipt of authentic products, resolution of an assumption, or the first verified synthetic prototype. Do not overwrite this session's blockers merely because a later session resolves them.
+
+## Stage 1 · 2026-11-23
+
+The owner selected Astra High, authorized the next steps and described a temporary delay in contacting Kelly. Codex chose the toy distributions, grid, random seeds, PSF and public association and implemented both experiments. No author contact or new science inputs from Kelly were needed. The original 15-minute estimate applies to the initial audit commit.
+
+The executable orbit/PSF checks passed. The independent-draw experiment produced one-grid-step shifts, and the noisy joint fit shifted one angle and the speed. We retained both discrepancies. One 16,030,080-byte public FITS product was downloaded, checked, masked, oriented and rendered. No OSIRIS frames were downloaded. The isolated scientific environment is pinned. A sandboxed timing utility could not query the kernel clock rate, so the final benchmark uses Python wall-time and process RSS. [Results, provenance, compute and remaining inputs](stage1.md)
+
+Codex also extracted all 47 rows of the two published Bender red-STIS reductions from the hash-pinned PDF, inspected rendered journal pages 297–298, and documented the radius convention, slit geometry and peak dispersions. This is a transcription of observed reference data. Independent extraction from the spectra and registration to OSIRIS remain open.

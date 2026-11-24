@@ -1,12 +1,14 @@
 # M31 nuclear disk: reproduction and AI research audit
 
-**Stage 0 checkpoint: 2026-11-23. No scientific fit has been reproduced yet.**
+**Stage 1 checkpoint · 2026-11-23. The synthetic disk prototype passed its numerical checks, and a public Hubble nuclear image is ready. Replication of the published OSIRIS fit still requires the observational and model inputs.**
 
 The initial commit (`6ae2bd1`) records approximately **15 minutes of Codex work** on the literature and resource audit, using the supplied research handoff. This is the project owner’s estimate of elapsed work time.
 
 We are assessing how independently an AI agent can reproduce the observations and dynamical modeling of Lockhart et al. (2018), *A Slowly Precessing Disk in the Nucleus of M31 as the Feeding Mechanism for a Central Starburst*, [ApJ 854, 121](https://doi.org/10.3847/1538-4357/aaaa71). The scientific target is the old eccentric stellar disk's orientation and precession, using authentic observations and the Peiris & Tremaine (2003; PT03) model.
 
 The literature and resource audit found public analysis code and relevant archive records. It did **not** locate the final OSIRIS science cube/maps, associated bin/error products, or the original PT03 particle file. These are the shortest route to a faithful replication. Raw-frame completeness and historical calibration compatibility remain unresolved.
+
+[Stage 1 results and limitations](docs/stage1.md) · [Synthetic maps](figures/synthetic_disk.png) · [Public ACS/HRC image](figures/hst_f435w.png)
 
 ## Start here
 
@@ -20,7 +22,17 @@ The literature and resource audit found public analysis code and relevant archiv
 
 ## Quick start
 
-Stage 0 uses the Python standard library and installed Poppler tools. No astronomy packages or pipeline have been installed. On this machine Python runs on macOS arm64.
+The Stage 1 prototype was tested on macOS arm64 with Python 3.14.7. From the repository root, reproduce the installed environment and outputs with the following commands. The HST command fetches one 16 MB product if missing and checks its digest before use.
+
+```bash
+python3.14 -m venv .venv
+.venv/bin/python -m pip install -r requirements-stage1.txt -e .
+.venv/bin/python -m unittest discover -s tests -v
+.venv/bin/python scripts/synthetic_demo.py
+.venv/bin/python scripts/hst_demo.py --fetch
+```
+
+The historical Stage 0 checks use the Python standard library.
 
 ```bash
 python3 scripts/verify_manifest.py
@@ -37,10 +49,10 @@ This fetches only the listed papers, source snapshots, and metadata; it does not
 
 ## Layout and provenance
 
-`literature/` contains downloaded PDFs and derived text. `docs/evidence/` contains unmodified archive responses and public source snapshots, for inspection only. Both are excluded from Git; the tracked acquisition manifest allows retrieval and verification. `data/raw/`, `data/interim/`, `data/processed/`, `models/`, `src/`, `tests/`, and `figures/` are staged for later work. Original input products must remain unchanged; write derived outputs to a separate directory.
+`literature/` contains downloaded PDFs and derived text. `docs/evidence/` contains unmodified archive responses and public source snapshots, for inspection only. Both are excluded from Git; the tracked acquisition manifest allows retrieval and verification. `data/raw/`, `data/interim/`, `data/processed/`, `models/`, `src/`, `tests/`, and `figures/` hold the project inputs, implementation and outputs. Original input products must remain unchanged; write derived outputs to a separate directory.
 
 The original [handoff](M31_Codex_Research_Handoff.md) is preserved. Corrections and uncertainties are recorded in the audit documents. Public visibility is not a software redistribution license; no third-party code is incorporated into our implementation.
 
 Every future scientific output must identify its class: **exact reproduction**, **approximate independent reconstruction**, **synthetic test**, or **unable to reproduce**. A transcription of a published result is reference data, not a recovered measurement. Algorithmic verification, numerical replication, and empirical model validity are separate achievements.
 
-The next recommended step is a small verified geometry/LOSVD prototype, with synthetic inputs labeled as such, while requesting the authentic intermediate products. A full raw reduction or large model grid awaits a separate feasibility decision.
+The [published STIS slit measurements](docs/bender_reference.csv) are staged for an observational cross-check once registration is established. The authentic-input request and full-grid prerequisites are in the decision memo.

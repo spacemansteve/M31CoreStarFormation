@@ -40,7 +40,7 @@ def main():
     selected = {r['dataURI']: r['size'] for r in products['data']
                 if r['productFilename'] in {name + '_drz.fits' for name in ids}}
     print('Five unique association drizzles:', len(selected), 'total advertised bytes:', sum(selected.values()))
-    print('No FITS contents or frame usability have been verified.')
+    print('These Stage 0 counts use metadata only. See docs/hst_product.json for the later F435W payload verification.')
 
 
 if __name__ == '__main__':

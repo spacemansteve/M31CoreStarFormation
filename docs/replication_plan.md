@@ -1,8 +1,8 @@
 # Staged replication plan
 
-2026-11-23. Stage 0 is reported in the decision memo. Current status: resource audit complete within its documented search scope; scientific replication not started. This session stops at staging, as requested.
+2026-11-23. Stage 0 is reported in the decision memo. The subsequent [Stage 1 report](stage1.md) records completion of the small numerical prototype and one public imaging demonstration. The authentic-input stage remains pending.
 
-## Next: small numerical verification prototype
+## Small numerical verification prototype
 
 Implement a small Python package with an isolated environment, explicit units, and an executable example. Start with approximately 10,000 synthetic particles and small maps; increase only after timing and convergence checks. Do not install OSIRIS reduction dependencies at this point.
 

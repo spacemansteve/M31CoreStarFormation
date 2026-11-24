@@ -25,3 +25,7 @@
 | A19 | Source snapshots lack detected redistribution licenses; pPXF/VorBin declare specific proprietary licenses. | Inspect terms before reuse/distribution. Source evidence is kept locally and Git-ignored. This does not block independent implementation of published mathematics. |
 
 All future resolutions should append the source, date, human input, and downstream outputs affected; preserve the earlier ambiguity as provenance.
+
+## Stage 1 choices · 2026-11-23
+
+A05, A09, A10, A11 and A18 were exercised on synthetic data using deterministic Gaussian PSF mixing, receding-positive velocities and raw LOSVD moments. A15 was exercised with a current ACS F435W association. The toy distributions, masks, objective, geometry and noise assumptions, as well as the observed-image processing choices, are recorded in the [Stage 1 report](stage1.md). The historical settings still require confirmation.
