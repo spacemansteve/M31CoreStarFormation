@@ -2,6 +2,8 @@
 
 **Stage 0 checkpoint: 2026-11-23. No scientific fit has been reproduced yet.**
 
+The initial commit (`6ae2bd1`) records approximately **15 minutes of Codex work** on the literature and resource audit, using the supplied research handoff. This is the project owner’s estimate of elapsed work time.
+
 We are assessing how independently an AI agent can reproduce the observations and dynamical modeling of Lockhart et al. (2018), *A Slowly Precessing Disk in the Nucleus of M31 as the Feeding Mechanism for a Central Starburst*, [ApJ 854, 121](https://doi.org/10.3847/1538-4357/aaaa71). The scientific target is the old eccentric stellar disk's orientation and precession, using authentic observations and the Peiris & Tremaine (2003; PT03) model.
 
 The literature and resource audit found public analysis code and relevant archive records. It did **not** locate the final OSIRIS science cube/maps, associated bin/error products, or the original PT03 particle file. These are the shortest route to a faithful replication. Raw-frame completeness and historical calibration compatibility remain unresolved.
