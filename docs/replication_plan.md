@@ -1,6 +1,6 @@
 # Staged replication plan
 
-2026-11-23. Stage 0 is reported in the decision memo. The subsequent [Stage 1 report](stage1.md) records completion of the small numerical prototype and one public imaging demonstration. The authentic-input stage remains pending.
+2026-11-23. Stage 0 is reported in the decision memo. The subsequent [Stage 1 report](stage1.md) records completion of the small numerical prototype and one public imaging demonstration. The [independent PT03/STIS comparison](pt03_stis.md) now tests a new draw from the published distribution against the public red-slit measurements. The authentic OSIRIS-input stage remains pending.
 
 ## Small numerical verification prototype
 

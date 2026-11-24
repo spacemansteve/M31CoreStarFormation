@@ -29,3 +29,7 @@ All future resolutions should append the source, date, human input, and downstre
 ## Stage 1 choices · 2026-11-23
 
 A05, A09, A10, A11 and A18 were exercised on synthetic data using deterministic Gaussian PSF mixing, receding-positive velocities and raw LOSVD moments. A15 was exercised with a current ACS F435W association. The toy distributions, masks, objective, geometry and noise assumptions, as well as the observed-image processing choices, are recorded in the [Stage 1 report](stage1.md). The historical settings still require confirmation.
+
+## Independent PT03/STIS checkpoint · 2026-11-23
+
+The red-STIS comparison uses PT03’s own physical scale and Table 1 parameters, a centered PA 39° slit, approximate along-slit edges and the published Eq. 21 PSF. We measured the effects of whole-orbit rejection versus conditional eccentricity redraw, opposite half-pixel slit offsets and a single-pixel extraction. Absolute registration to the historic slit remains uncertain. FQ and FCQ are compared to separate model-side LOSVD fits. [Assumptions and numerical effects](pt03_stis.md)
