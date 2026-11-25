@@ -10,9 +10,9 @@ SLIT_WIDTH = .1
 PSF_STEP = .0025
 
 
-def slit_coordinates(xy):
+def slit_coordinates(xy, pa_deg=39.):
     """Positive along-slit points to P1 (NE), positive across-slit to NW."""
-    pa = np.deg2rad(39)
+    pa = np.deg2rad(pa_deg)
     west, north = xy.T
     return -west*np.sin(pa) + north*np.cos(pa), west*np.cos(pa) + north*np.sin(pa)
 

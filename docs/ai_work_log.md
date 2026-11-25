@@ -48,3 +48,7 @@ Codex also extracted all 47 rows of the two published Bender red-STIS reductions
 ## Independent PT03/STIS comparison · 2026-11-23
 
 The owner requested the next independent step. Codex implemented the published non-aligned distribution, the STIS PSF and slit, and two LOSVD estimators. Four particle draws predicted both tabulated red-STIS reductions. Human input was limited to choosing this direction. No author contact, new downloads, or parameter fitting to the observed stars occurred. The first PSF quadrature check marginally failed its tolerance. Halving the mesh spacing passed with changes below 0.12 km/s in baseline V. Nine tests passed. Registration and radial-bin boundaries are approximations. The red-side rotation peak agrees, while the approaching-side mismatch exceeds draw-to-draw fluctuations. [Numerical results, sensitivities and timing](pt03_stis.md)
+
+## STIS aperture audit · 2026-11-25
+
+Codex recovered nine red-STIS extraction products totaling 20,790 s, the proposal, and three companion files for the first exposure. The archive confirms PA and row scale. The historical sky registration and FQ/FCQ extraction weights remain unresolved. A four-case rerun using the header geometry and half-row aperture translations left an 80–83 km/s discrepancy at −0.180″. No new human scientific input was required. [Archive evidence, tests and remaining inputs](stis_aperture_audit.md)

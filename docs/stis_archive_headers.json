@@ -1,0 +1,387 @@
+[
+  {
+    "file": "o58501020_sx1.fits",
+    "size_bytes": 80640,
+    "sha256": "2fa9ae13a889ac2d75d5409376d6f609f27463ddf4b4dca83c515cb1b33cdb94",
+    "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/o58501020_sx1.fits",
+    "hdus": [
+      "PRIMARY",
+      "SCI"
+    ],
+    "header": {
+      "PROPOSID": 8018,
+      "ROOTNAME": "o58501020",
+      "APERTURE": "52X0.1",
+      "OPT_ELEM": "G750M",
+      "CENWAVE": 8561,
+      "POSTARG1": 0.0,
+      "POSTARG2": 0.0,
+      "EXPTIME": 1600.0,
+      "TEXPTIME": 1600.0,
+      "RA_TARG": 10.68458333333,
+      "DEC_TARG": 41.26916666667,
+      "RA_APER": 10.68458333333,
+      "DEC_APER": 41.26916666667,
+      "PA_APER": -141.0236612793,
+      "PLATESC": 0.05078,
+      "CAL_VER": "3.4.2 (19-Jan-2018)",
+      "SHIFTA2": -1.875439014477
+    },
+    "spectral_rows": 1,
+    "extraction_heights_pixels": [
+      7.0
+    ]
+  },
+  {
+    "file": "o58501040_sx1.fits",
+    "size_bytes": 80640,
+    "sha256": "4fccd5b90efbb39adc20d05631c96174e3701a09ce193500543b11268fc20202",
+    "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/o58501040_sx1.fits",
+    "hdus": [
+      "PRIMARY",
+      "SCI"
+    ],
+    "header": {
+      "PROPOSID": 8018,
+      "ROOTNAME": "o58501040",
+      "APERTURE": "52X0.1",
+      "OPT_ELEM": "G750M",
+      "CENWAVE": 8561,
+      "POSTARG1": 0.0,
+      "POSTARG2": 0.206,
+      "EXPTIME": 2500.0,
+      "TEXPTIME": 2500.0,
+      "RA_TARG": 10.68458333333,
+      "DEC_TARG": 41.26916666667,
+      "RA_APER": 10.68463122027,
+      "DEC_APER": 41.26921115157,
+      "PA_APER": -141.0236307617,
+      "PLATESC": 0.05078,
+      "CAL_VER": "3.6.1 (02-Nov-2026)",
+      "SHIFTA2": -1.797113746168
+    },
+    "spectral_rows": 1,
+    "extraction_heights_pixels": [
+      7.0
+    ]
+  },
+  {
+    "file": "o58501060_sx1.fits",
+    "size_bytes": 80640,
+    "sha256": "03c74d211f64c9578fa32a785557ad91ba63dc17fe37d78d282276d1ece03432",
+    "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/o58501060_sx1.fits",
+    "hdus": [
+      "PRIMARY",
+      "SCI"
+    ],
+    "header": {
+      "PROPOSID": 8018,
+      "ROOTNAME": "o58501060",
+      "APERTURE": "52X0.1",
+      "OPT_ELEM": "G750M",
+      "CENWAVE": 8561,
+      "POSTARG1": 0.0,
+      "POSTARG2": 0.412,
+      "EXPTIME": 2550.0,
+      "TEXPTIME": 2550.0,
+      "RA_TARG": 10.68458333333,
+      "DEC_TARG": 41.26916666667,
+      "RA_APER": 10.68467910727,
+      "DEC_APER": 41.26925563645,
+      "PA_APER": -141.0236002441,
+      "PLATESC": 0.05078,
+      "CAL_VER": "3.6.1 (02-Nov-2026)",
+      "SHIFTA2": -1.777531501026
+    },
+    "spectral_rows": 1,
+    "extraction_heights_pixels": [
+      7.0
+    ]
+  },
+  {
+    "file": "o58501080_sx1.fits",
+    "size_bytes": 80640,
+    "sha256": "08a60dfad35205dd8e54020e48bb899c629691ed676f17b201f238b8e174f0db",
+    "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/o58501080_sx1.fits",
+    "hdus": [
+      "PRIMARY",
+      "SCI"
+    ],
+    "header": {
+      "PROPOSID": 8018,
+      "ROOTNAME": "o58501080",
+      "APERTURE": "52X0.1",
+      "OPT_ELEM": "G750M",
+      "CENWAVE": 8561,
+      "POSTARG1": 0.0,
+      "POSTARG2": 0.618,
+      "EXPTIME": 2500.0,
+      "TEXPTIME": 2500.0,
+      "RA_TARG": 10.68458333333,
+      "DEC_TARG": 41.26916666667,
+      "RA_APER": 10.68472699433,
+      "DEC_APER": 41.26930012131,
+      "PA_APER": -141.0235697266,
+      "PLATESC": 0.05078,
+      "CAL_VER": "3.4.2 (19-Jan-2018)",
+      "SHIFTA2": -1.772326548861
+    },
+    "spectral_rows": 1,
+    "extraction_heights_pixels": [
+      7.0
+    ]
+  },
+  {
+    "file": "o585010a0_sx1.fits",
+    "size_bytes": 80640,
+    "sha256": "464986332b0e5dac69cb3fde6c679cb5d1a73590f3522b7a8d42e2e55099fe68",
+    "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/o585010a0_sx1.fits",
+    "hdus": [
+      "PRIMARY",
+      "SCI"
+    ],
+    "header": {
+      "PROPOSID": 8018,
+      "ROOTNAME": "o585010a0",
+      "APERTURE": "52X0.1",
+      "OPT_ELEM": "G750M",
+      "CENWAVE": 8561,
+      "POSTARG1": 0.0,
+      "POSTARG2": 0.825,
+      "EXPTIME": 2550.0,
+      "TEXPTIME": 2550.0,
+      "RA_TARG": 10.68458333333,
+      "DEC_TARG": 41.26916666667,
+      "RA_APER": 10.68477511393,
+      "DEC_APER": 41.26934482209,
+      "PA_APER": -141.023539209,
+      "PLATESC": 0.05078,
+      "CAL_VER": "3.6.1 (02-Nov-2026)",
+      "SHIFTA2": -1.788334227612
+    },
+    "spectral_rows": 1,
+    "extraction_heights_pixels": [
+      7.0
+    ]
+  },
+  {
+    "file": "o58502020_sx1.fits",
+    "size_bytes": 80640,
+    "sha256": "aef22290482c1c7f548a91d37c1cfbe3df0e76bdd56de233d6190982a2cd0f84",
+    "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/o58502020_sx1.fits",
+    "hdus": [
+      "PRIMARY",
+      "SCI"
+    ],
+    "header": {
+      "PROPOSID": 8018,
+      "ROOTNAME": "o58502020",
+      "APERTURE": "52X0.1",
+      "OPT_ELEM": "G750M",
+      "CENWAVE": 8561,
+      "POSTARG1": 0.0,
+      "POSTARG2": 1.031,
+      "EXPTIME": 1560.0,
+      "TEXPTIME": 1560.0,
+      "RA_TARG": 10.68458333333,
+      "DEC_TARG": 41.26916666667,
+      "RA_APER": 10.68482300112,
+      "DEC_APER": 41.26938930691,
+      "PA_APER": -141.0235086914,
+      "PLATESC": 0.05078,
+      "CAL_VER": "3.6.1 (02-Nov-2026)",
+      "SHIFTA2": -2.103642746906
+    },
+    "spectral_rows": 1,
+    "extraction_heights_pixels": [
+      7.0
+    ]
+  },
+  {
+    "file": "o58502040_sx1.fits",
+    "size_bytes": 80640,
+    "sha256": "94d4c61b71385573de9afcdadf7f4753879b4b452a3d104e7f709ce31e65570c",
+    "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/o58502040_sx1.fits",
+    "hdus": [
+      "PRIMARY",
+      "SCI"
+    ],
+    "header": {
+      "PROPOSID": 8018,
+      "ROOTNAME": "o58502040",
+      "APERTURE": "52X0.1",
+      "OPT_ELEM": "G750M",
+      "CENWAVE": 8561,
+      "POSTARG1": 0.0,
+      "POSTARG2": 1.237,
+      "EXPTIME": 2550.0,
+      "TEXPTIME": 2550.0,
+      "RA_TARG": 10.68458333333,
+      "DEC_TARG": 41.26916666667,
+      "RA_APER": 10.68487088839,
+      "DEC_APER": 41.26943379171,
+      "PA_APER": -141.0234781738,
+      "PLATESC": 0.05078,
+      "CAL_VER": "3.6.1 (02-Nov-2026)",
+      "SHIFTA2": -1.990143088301
+    },
+    "spectral_rows": 1,
+    "extraction_heights_pixels": [
+      7.0
+    ]
+  },
+  {
+    "file": "o58502060_sx1.fits",
+    "size_bytes": 80640,
+    "sha256": "a7eebdfea6df5f48b815c6004b2236d05c710c83b629eb417beccbf4f0b6be5b",
+    "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/o58502060_sx1.fits",
+    "hdus": [
+      "PRIMARY",
+      "SCI"
+    ],
+    "header": {
+      "PROPOSID": 8018,
+      "ROOTNAME": "o58502060",
+      "APERTURE": "52X0.1",
+      "OPT_ELEM": "G750M",
+      "CENWAVE": 8561,
+      "POSTARG1": 0.0,
+      "POSTARG2": 1.443,
+      "EXPTIME": 2490.0,
+      "TEXPTIME": 2490.0,
+      "RA_TARG": 10.68458333333,
+      "DEC_TARG": 41.26916666667,
+      "RA_APER": 10.68491877571,
+      "DEC_APER": 41.26947827649,
+      "PA_APER": -141.0234476563,
+      "PLATESC": 0.05078,
+      "CAL_VER": "3.4.2 (19-Jan-2018)",
+      "SHIFTA2": -1.941152249046
+    },
+    "spectral_rows": 1,
+    "extraction_heights_pixels": [
+      7.0
+    ]
+  },
+  {
+    "file": "o58502080_sx1.fits",
+    "size_bytes": 80640,
+    "sha256": "acef364da08dd9cb21a8b4773375ff485580222573fb4af25bd276c815a0943b",
+    "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/o58502080_sx1.fits",
+    "hdus": [
+      "PRIMARY",
+      "SCI"
+    ],
+    "header": {
+      "PROPOSID": 8018,
+      "ROOTNAME": "o58502080",
+      "APERTURE": "52X0.1",
+      "OPT_ELEM": "G750M",
+      "CENWAVE": 8561,
+      "POSTARG1": 0.0,
+      "POSTARG2": 1.24,
+      "EXPTIME": 2490.0,
+      "TEXPTIME": 2490.0,
+      "RA_TARG": 10.68458333333,
+      "DEC_TARG": 41.26916666667,
+      "RA_APER": 10.68487158577,
+      "DEC_APER": 41.26943443955,
+      "PA_APER": -141.0234781738,
+      "PLATESC": 0.05078,
+      "CAL_VER": "3.6.1 (02-Nov-2026)",
+      "SHIFTA2": -1.947056229304
+    },
+    "spectral_rows": 1,
+    "extraction_heights_pixels": [
+      7.0
+    ]
+  },
+  {
+    "file": "8018.pro",
+    "size_bytes": 42200,
+    "sha256": "7eca1c25d098b09e57c50c5761c6b44a4825a3c8dbef8c30f99df47176b4091c",
+    "url": "https://www.stsci.edu/hst/phase2-public/8018.pro"
+  },
+  {
+    "file": "o58501020_sx2.fits",
+    "size_bytes": 14477760,
+    "sha256": "f90697e97092e599f9713d58c8258cafcb6766773e8f74657806a0b05ee68619",
+    "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/o58501020_sx2.fits",
+    "hdus": [
+      "PRIMARY",
+      "SCI",
+      "ERR",
+      "DQ"
+    ],
+    "header": {
+      "PROPOSID": 8018,
+      "ROOTNAME": "o58501020",
+      "APERTURE": "52X0.1",
+      "OPT_ELEM": "G750M",
+      "CENWAVE": 8561,
+      "POSTARG1": 0.0,
+      "POSTARG2": 0.0,
+      "EXPTIME": 1600.0,
+      "TEXPTIME": 1600.0,
+      "RA_TARG": 10.68458333333,
+      "DEC_TARG": 41.26916666667,
+      "RA_APER": 10.68458333333,
+      "DEC_APER": 41.26916666667,
+      "PA_APER": -141.0236612793,
+      "PLATESC": 0.05078,
+      "CAL_VER": "3.4.2 (19-Jan-2018)",
+      "CTYPE2": "ANGLE",
+      "CRPIX2": 601.0,
+      "CRVAL2": 0.0,
+      "CD2_2": 1.411361111111e-05,
+      "SHIFTA2": -1.875439014477
+    }
+  },
+  {
+    "file": "o58501020_crj.fits",
+    "size_bytes": 10537920,
+    "sha256": "17426c017ea48202fcbc524c4342721f439710d0c4e835c6de24bd6e575d8315",
+    "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/o58501020_crj.fits",
+    "hdus": [
+      "PRIMARY",
+      "SCI",
+      "ERR",
+      "DQ"
+    ],
+    "header": {
+      "PROPOSID": 8018,
+      "ROOTNAME": "o58501020",
+      "APERTURE": "52X0.1",
+      "OPT_ELEM": "G750M",
+      "CENWAVE": 8561,
+      "POSTARG1": 0.0,
+      "POSTARG2": 0.0,
+      "EXPTIME": 1600.0,
+      "TEXPTIME": 1600.0,
+      "RA_TARG": 10.68458333333,
+      "DEC_TARG": 41.26916666667,
+      "RA_APER": 10.68458333333,
+      "DEC_APER": 41.26916666667,
+      "PA_APER": -141.0236612793,
+      "PLATESC": 0.05078,
+      "CAL_VER": "3.4.2 (19-Jan-2018)",
+      "CTYPE2": "ANGLE",
+      "CRPIX2": 516.67,
+      "CRVAL2": 0.0,
+      "CD2_2": 1.41056e-05,
+      "SHIFTA2": -1.875439014477
+    }
+  },
+  {
+    "file": "o58501020_spt.fits",
+    "size_bytes": 112320,
+    "sha256": "5628573d638dbddd13d1b84293d11eab10eabdb0ab3af2ccc5dff04dedac29f5",
+    "url": "https://mast.stsci.edu/api/v0.1/Download/file?uri=mast:HST/product/o58501020_spt.fits",
+    "hdus": [
+      "PRIMARY",
+      "UDL",
+      "UDL"
+    ],
+    "header": {}
+  }
+]

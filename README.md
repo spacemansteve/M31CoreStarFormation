@@ -8,7 +8,7 @@ We are assessing how independently an AI agent can reproduce the observations an
 
 The literature and resource audit found public analysis code and relevant archive records. It did **not** locate the final OSIRIS science cube/maps, associated bin/error products, or the original PT03 particle file. These are the shortest route to a faithful replication. Raw-frame completeness and historical calibration compatibility remain unresolved.
 
-[PT03/STIS comparison](docs/pt03_stis.md) · [Observed and predicted slit profiles](figures/pt03_stis.png)
+[STIS aperture audit](docs/stis_aperture_audit.md) · [PT03/STIS comparison](docs/pt03_stis.md) · [Observed and predicted slit profiles](figures/pt03_stis.png)
 
 [Stage 1 results and limitations](docs/stage1.md) · [Synthetic maps](figures/synthetic_disk.png) · [Public ACS/HRC image](figures/hst_f435w.png)
 

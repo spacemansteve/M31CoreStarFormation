@@ -17,23 +17,30 @@ SEEDS = (7101, 7102, 7103, 7104)
 BATCH = 50_000
 BATCHES_PER_SEED = 5
 FIELDS = ("v_kms", "sigma_kms", "h3", "h4")
-VARIANTS = ("baseline", "slit_nw", "slit_se", "single_pixel", "discard_orbit")
+VARIANTS = ("baseline", "slit_nw", "slit_se", "single_pixel", "discard_orbit",
+            "archive_pa", "archive_p3_ne", "archive_p3_sw", "archive_native_pixel")
+ARCHIVE_PA = 38.97643
+ARCHIVE_PIXEL = .050809
 
 
 def make_apertures(rows):
     step = PSF_STEP
     kernel = psf(step)
-    baseline, single = [], []
+    baseline, single, native = [], [], []
     for method in ("FQ", "FCQ"):
         centers = np.array([float(r["radius_arcsec"]) for r in rows if r["method"] == method])
         edges = inferred_edges(centers)
         baseline.extend(Aperture(a, b, kernel, step) for a, b in zip(edges[:-1], edges[1:]))
         single.extend(Aperture(c-.0255, c+.0255, kernel, step) for c in centers)
-    return baseline, single
+        native.extend(Aperture(c-ARCHIVE_PIXEL/2, c+ARCHIVE_PIXEL/2, kernel, step)
+                      for c in centers)
+    return baseline, single, native
 
 
 def simulate(rows):
-    apertures, single = make_apertures(rows)
+    apertures, single, native = make_apertures(rows)
+    windows_by_variant = (apertures, apertures, apertures, single, apertures,
+                          apertures, apertures, apertures, native)
     shape = (len(SEEDS), len(VARIANTS), len(rows))
     hist = np.zeros((*shape, len(VELOCITY_EDGES)+1))
     squared = np.zeros(shape)
@@ -43,18 +50,20 @@ def simulate(rows):
         for _ in range(BATCHES_PER_SEED):
             xy, los, initially_bound = sample_sky(rng, BATCH)
             first_rejected += np.count_nonzero(~initially_bound)
-            along, across = slit_coordinates(xy)
-            # Cut well outside all modeled cross-slit support, including offsets.
-            keep = np.abs(across) < .45
-            along, across = along[keep], across[keep]
-            index = np.searchsorted(VELOCITY_EDGES, los[keep], side="right")
-            bound = initially_bound[keep]
-            for j, (windows, offset) in enumerate(((apertures, 0), (apertures, .025),
-                                                  (apertures, -.025), (single, 0), (apertures, 0))):
-                relative = across-offset
-                location, channel = along, index
-                if VARIANTS[j] == "discard_orbit":
-                    location, relative, channel = along[bound], relative[bound], index[bound]
+            nominal = slit_coordinates(xy)
+            archive = slit_coordinates(xy, ARCHIVE_PA)
+            velocity_index = np.searchsorted(VELOCITY_EDGES, los, side="right")
+            for j, (variant, windows) in enumerate(zip(VARIANTS, windows_by_variant)):
+                along, across = archive if variant.startswith("archive_") else nominal
+                cross_offset = {"slit_nw": .025, "slit_se": -.025}.get(variant, 0.)
+                along_offset = {"archive_p3_ne": ARCHIVE_PIXEL/2,
+                                "archive_p3_sw": -ARCHIVE_PIXEL/2}.get(variant, 0.)
+                keep = np.abs(across) < .45
+                if variant == "discard_orbit":
+                    keep &= initially_bound
+                location = along[keep] - along_offset
+                relative = across[keep] - cross_offset
+                channel = velocity_index[keep]
                 for k, window in enumerate(windows):
                     counts, squares = histogram(window, location, relative, channel)
                     hist[g, j, k] += counts
